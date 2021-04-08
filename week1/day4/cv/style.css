@@ -2,17 +2,40 @@ body {
     width: 100%;
 }
 .header {
+    width: 100%;
+    height: 250px;
     overflow: hidden;
-    background:pink;
+    background:rgb(231, 222, 204);
     padding: 20px 10px;
+    margin: -10px;
 }
 .title {
     position: relative;
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 0px;
+    left: 30px;
+    font-size: 60px;
+    font-style: import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 }
 #photo {
     position: relative;
+    top: -225px;
+    left: 20px;
     float: right;
     align-items: flex-start;
+}
+.icon {
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+a {
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px
+}
+.profile {
+    width: 80%;
 }
