@@ -1,7 +1,8 @@
 body {
     width: 100%;
+    background-image: url(image/background.jpg);
 }
-.header {
+#header {
     width: 100%;
     height: 250px;
     overflow: hidden;
@@ -9,12 +10,12 @@ body {
     padding: 20px 10px;
     margin: -10px;
 }
-.title {
+#title {
     position: relative;
     top: 0px;
     left: 30px;
     font-size: 60px;
-    font-style: import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #photo {
     position: relative;
@@ -23,7 +24,7 @@ body {
     float: right;
     align-items: flex-start;
 }
-.icon {
+#icon {
     position: relative;
     top: 30px;
     left: 100px;
@@ -36,6 +37,32 @@ a {
     line-height: 25px;
     border-radius: 4px
 }
-.profile {
+#profile {
+    width: 50%;
+}
+#work {
     width: 80%;
+}
+p1 {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p3 {
+    opacity: 0.6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+p2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#blank {
+    width: 30px;
+    height: 100%;
+    position: relative;
+    float: right;
+    color: violet;
 }
