@@ -11,7 +11,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    background-color: #1A1A1B;
+    background-color:rgb(26, 26, 27);
     text-align: center;
 }
 .topnav img {
@@ -100,7 +100,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #1A1A1B;
+    background-color:rgb(26, 26, 27);
     text-align: center;
 }
 .icon {
