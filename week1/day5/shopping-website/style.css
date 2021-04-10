@@ -42,3 +42,17 @@
     border: none;
     cursor: pointer;
 }
+.products{
+    vertical-align: top;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top:100px;
+    text-align: center;
+}
+.product-info {
+    position: relative;
+
+}
