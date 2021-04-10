@@ -5,12 +5,12 @@
     width: 100%;
 }
 .topnav {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    overflow: hidden;
-    background-color:#1A1A1B;
-    padding: 0;
-    margin: -10px;
-
+    background-color: #1A1A1B;
+    text-align: center;
 }
 .topnav img {
     position: relative;
@@ -48,16 +48,42 @@
 .product-card {
     display: block;
     text-align: center;
-    padding: 30px;
+    padding: 50px;
+    cursor: pointer;
+}
+.product-card:hover {
+    transform: scale(1.1);
 }
 .products {
     position: relative;
-    top: 20px;
+    top: 40px;
     display: inline-flex;
-    border: hotpink 5px;
 }
 .headline {
     position: relative;
-    top: 30px;
+    top: 80px;
     left: 20px;
+}
+h2 {
+    font-size: 50px;
+    font-family: 'Train One', cursive;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A1A1B;
+    text-align: center;
+}
+.icon {
+    justify-content: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
