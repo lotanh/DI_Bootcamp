@@ -3,6 +3,8 @@
  body {
     margin: 0px;
     width: 100%;
+    background-image: url(images/background.jpg);
+    background-position: cover;
 }
 .topnav {
     position: fixed;
@@ -45,14 +47,25 @@
     border: none;
     cursor: pointer;
 }
+.card {
+    display: none;
+}
 .product-card {
+    position: relative;
     display: block;
     text-align: center;
     padding: 50px;
     cursor: pointer;
+    color: white;
+    font-size: 20px;
 }
 .product-card:hover {
     transform: scale(1.1);
+    background-color: white; opacity:0.7;
+    color: black;
+}
+.product-card:hover .card {
+    display: block;
 }
 .products {
     position: relative;
@@ -67,6 +80,7 @@
 h2 {
     font-size: 50px;
     font-family: 'Train One', cursive;
+    color: white;
 }
 footer {
     position: fixed;
@@ -86,4 +100,7 @@ footer {
     text-align: center;
     text-decoration: none;
     color: white;
+}
+div img {
+    position: relative;
 }
