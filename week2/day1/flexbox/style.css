@@ -1,0 +1,26 @@
+.main {
+    border: 5px solid black;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div {
+    height: 200px;
+    
+}
+.top {
+    background-color: green;
+    align-self: stretch;
+}
+.middle {
+    width: 500px;
+    background-color: yellow;
+    align-self: center;
+
+}
+.bottom {
+    background-color: blue;
+    align-self: stretch;
+
+}
