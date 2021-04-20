@@ -86,3 +86,18 @@ li {
     width: 30%;
     align-self: center;
 }
+
+.container img {
+    width: 250px;
+    height: 200px;
+}
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+.container div {
+    text-align: center;
+    border: 5px solid black;
+}
