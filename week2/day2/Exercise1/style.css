@@ -22,9 +22,7 @@ h2 {
 .content {
     padding: 200px 50px;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+                          
     grid-column-gap: 50px;
     grid-row: span 3;
 }
