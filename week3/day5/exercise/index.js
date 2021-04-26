@@ -85,4 +85,8 @@ let details = {
     is: 'Rudolf',
     the: 'raindeer'
 }
-console.log('my name is')
+
+// Exercise 7
+let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
+
+
