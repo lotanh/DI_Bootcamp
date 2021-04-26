@@ -64,29 +64,45 @@
 // }
 
 // Exercise 5 : Family
-let family = {
-    father : 'James',
-    mother : 'Kate',
-    sister : 'Michael',
-    brother : 'Matt'
-};
+// let family = {
+//     father : 'James',
+//     mother : 'Kate',
+//     sister : 'Michael',
+//     brother : 'Matt'
+// };
 
-for (let key in family) {
-    if (family.hasOwnProperty(key)) {
-        console.log(key);
-    }
-}
+// for (let key in family) {
+//     if (family.hasOwnProperty(key)) {
+//         console.log(key);
+//     }
+// }
 
-console.log(Object.values(famillY))
+// console.log(Object.values(famillY))
 
 // Exercise 6
-let details = {
-    my: 'name',
-    is: 'Rudolf',
-    the: 'raindeer'
-}
+// let details = {
+//     my: 'name',
+//     is: 'Rudolf',
+//     the: 'raindeer'
+// }
 
-// Exercise 7
+// for (var key in details) {
+//     if (details.hasOwnProperty(key)) {
+//         console.log(key + " " + details[key]);
+//     }
+// }
+
+// // Exercise 7
+// A group of friends have decided to start a secret society. The society’s name will be the first letter of each of their names sorted in alphabetical order.
+// Hint: a string is an array of letters
+// Console.log the name of their secret society.
 let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+    let presentName = names[i]
+    for (let x = 0; x < names.length; x++) {
+        console.log(presentName[0])
+    }
+}
 
 
