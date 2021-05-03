@@ -5,10 +5,10 @@
 // The function should console.log a sentence about you (ie. your name, age, hobbies ect…).
 // Call the function.
 
-// function infoAboutMe() {
-//     console.log('My name is lotan and i am 25 years old, i love to code.')
-// }
-// infoAboutMe()
+function infoAboutMe() {
+    console.log('My name is lotan and i am 25 years old, i love to code.')
+}
+infoAboutMe()
 
 // // 2
 // // Create a function called infoAboutPerson(personName, personAge, personFavoriteColor) that takes 3 parameters.
@@ -17,11 +17,11 @@
 // // infoAboutPerson("David", 45, "blue")
 // // infoAboutPerson("Josh", 12, "yellow")
 
-// function infoAboutPerson(personName, personAge, personFavoriteColor) {
-//     console.log(`Your name is ${personName}, and you are ${personAge} years old. Your fav color is ${personFavoriteColor}`)
-// }
-// infoAboutPerson("David", 45, "blue")
-// infoAboutPerson("Josh", 12, "yellow")
+function infoAboutPerson(personName, personAge, personFavoriteColor) {
+    console.log(`Your name is ${personName}, and you are ${personAge} years old. Your fav color is ${personFavoriteColor}`)
+}
+infoAboutPerson("David", 45, "blue")
+infoAboutPerson("Josh", 12, "yellow")
 
 // 3
 // Add a parameter personHobbies to the function infoAboutPerson(personName, personAge, personFavoriteColor, personHobbies).
@@ -32,17 +32,17 @@
 // infoAboutPerson("David", 45, "blue", ["tennis", "painting"])
 // infoAboutPerson("Josh", 12, "yellow", ["videoGame", "hanging out with friends", "playing cards"])
 
-// function infoAboutPerson(personName, personAge, personFavoriteColor, personHobbies) {
-//     console.log(`Your name is ${personName}, and you are ${personAge} years old. Your fav color is ${personFavoriteColor}`)
-//     console.log('My hobbies are:')
-//     srt = " "
-//     for (let i = -1; i < personHobbies.length; i++) {
-//         let personFavHobby = srt + personHobbies[i]
-//         console.log(personFavHobby); 
-//     }
-// }
-// infoAboutPerson("David", 45, "blue", ["tennis", "painting"])
-// infoAboutPerson("Josh", 12, "yellow", ["videoGame", "hanging out with friends", "playing cards"])
+function infoAboutPerson(personName, personAge, personFavoriteColor, personHobbies) {
+    console.log(`Your name is ${personName}, and you are ${personAge} years old. Your fav color is ${personFavoriteColor}`)
+    console.log('My hobbies are:')
+    srt = " "
+    for (let i = -1; i < personHobbies.length; i++) {
+        let personFavHobby = srt + personHobbies[i]
+        console.log(personFavHobby); 
+    }
+}
+infoAboutPerson("David", 45, "blue", ["tennis", "painting"])
+infoAboutPerson("Josh", 12, "yellow", ["videoGame", "hanging out with friends", "playing cards"])
 
 // Exercise 2 : Keyless Car\
 
@@ -53,33 +53,33 @@
 // if the user just turned 18, alert “Congratulations on your first year of driving. Enjoy the ride!”
 // Call the function.
 // Instead of using prompt to ask the user for their age, have the checkDriverAge() function accept an argument age.
-// function checkDriverAge() {
-//     userAnswer = prompt('How old are you?')
-//     if (userAnswer < 18) {
-//         alert('Sorry, you are too young to drive this car. Powering off')
-//     }
-//     else if (userAnswer > 18) {
-//         alert('You are old enough to drive, Powering On. Enjoy the ride!')
-//     }
-//     else if (userAnswer = 18) {
-//         alert('Congratulations on your first year of driving. Enjoy the ride!')
-//     }
-// }
-// checkDriverAge()
+function checkDriverAge() {
+    userAnswer = prompt('How old are you?')
+    if (userAnswer < 18) {
+        alert('Sorry, you are too young to drive this car. Powering off')
+    }
+    else if (userAnswer > 18) {
+        alert('You are old enough to drive, Powering On. Enjoy the ride!')
+    }
+    else if (userAnswer = 18) {
+        alert('Congratulations on your first year of driving. Enjoy the ride!')
+    }
+}
+checkDriverAge()
 
 // // option 2
-// function checkDriverAge(age) {
-//     if (age < 18) {
-//         alert('Sorry, you are too young to drive this car. Powering off')
-//     }
-//     else if (age > 18) {
-//         alert('You are old enough to drive, Powering On. Enjoy the ride!')
-//     }
-//     else if (age = 18) {
-//         alert('Congratulations on your first year of driving. Enjoy the ride!')
-//     }
-// }
-// checkDriverAge(20)
+function checkDriverAge(age) {
+    if (age < 18) {
+        alert('Sorry, you are too young to drive this car. Powering off')
+    }
+    else if (age > 18) {
+        alert('You are old enough to drive, Powering On. Enjoy the ride!')
+    }
+    else if (age = 18) {
+        alert('Congratulations on your first year of driving. Enjoy the ride!')
+    }
+}
+checkDriverAge(20)
 
 // Exercise 3: Odd Or Even
 
@@ -90,16 +90,16 @@
 // Else, console.log "the number <number> is odd"
 // Call the function
 
-// function checkNumber() {
-//     for (let i = 0; i <= 100; i++) {
-//         if (i % 2 == 0) {
-//             console.log(`the number ${i} is even`)
-//         }else {
-//             console.log(`the number ${i} is odd`)
-//         }
-//     }
-// }
-// checkNumber()
+function checkNumber() {
+    for (let i = 0; i <= 100; i++) {
+        if (i % 2 == 0) {
+            console.log(`the number ${i} is even`)
+        }else {
+            console.log(`the number ${i} is odd`)
+        }
+    }
+}
+checkNumber()
 
 // Exercise 4: Find The Numbers Divisible By 23
 // Create a function call isDivisible() that takes no parameter.
@@ -107,17 +107,17 @@
 // Console.log all the numbers divisible by 23.
 // At the end, console.log the sum of all numbers that are divisible by 23.
 
-// function isDivisible() {
-//     sum = 0
-//     for (let i = 0; i <= 500; i++) {
-//         if (i % 23 == 0) {
-//             console.log(i)
-//             sum = sum + i;
-//         }
-//     }
-//     console.log(sum)
-// }
-// isDivisible()
+function isDivisible() {
+    sum = 0
+    for (let i = 0; i <= 500; i++) {
+        if (i % 23 == 0) {
+            console.log(i)
+            sum = sum + i;
+        }
+    }
+    console.log(sum)
+}
+isDivisible()
 
 // Exercise 5 : Amazon Shopping
 
@@ -127,21 +127,21 @@
 // let the user know if the item is in the basket
 // Hint: Use the in keyword inside the conditional
 
-// let amazonBasket = {
-//     glasses: 1,
-//     books: 2,
-//     floss: 100
-// }
-// function checkBasket() {
-//     userAnswer = prompt('What is the item?')
-//     userAnswerLow = userAnswer.toLowerCase()
-//     if (userAnswerLow in amazonBasket) {
-//         alert(`You have ${userAnswerLow} in your basket!`);  
-//     }else {
-//         alert(`You do not have ${userAnswerLow} in your basket!`);
-//     }
-// }
-// checkBasket() 
+let amazonBasket = {
+    glasses: 1,
+    books: 2,
+    floss: 100
+}
+function checkBasket() {
+    userAnswer = prompt('What is the item?')
+    userAnswerLow = userAnswer.toLowerCase()
+    if (userAnswerLow in amazonBasket) {
+        alert(`You have ${userAnswerLow} in your basket!`);  
+    }else {
+        alert(`You do not have ${userAnswerLow} in your basket!`);
+    }
+}
+checkBasket() 
 
 // Exercise 6 : What’s In My Wallet ?
 // Given a item price and an array representing the amount of change in your pocket, determine whether or not you can afford the item.
@@ -151,15 +151,15 @@
 // let Nickels = 0.05
 // let Pennies = 0.01
 
-// function changeEnough([one, two , three , four], itemPrice) {
-//     sum = (Quarters * one) + (Dimes * two) + (Nickels * three) + (Pennies * four)
-//     console.log(sum)
-//     if (sum > itemPrice) {
-//         console.log(true)
-//     } else {
-//         console.log(false)
-//     }
-// }
+function changeEnough([one, two , three , four], itemPrice) {
+    sum = (Quarters * one) + (Dimes * two) + (Nickels * three) + (Pennies * four)
+    console.log(sum)
+    if (sum > itemPrice) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
 // changeEnough([2, 100, 0, 0], 14.11)
 // changeEnough([0, 0, 20, 5], 0.75)
 // changeEnough([25, 20, 5, 0], 4.25)
@@ -173,29 +173,29 @@
 // If the item is in stock find out the price in the prices object.
 // Call the myBill() function.
 // Bonus: If the item is in stock, decrease the item’s stock by 1
-// let stock = { 
-//     "banana": 6, 
-//     "apple": 0,
-//     "pear": 12,
-//     "orange": 32,
-//     "blueberry":1
-// }  
+let stock = { 
+    "banana": 6, 
+    "apple": 0,
+    "pear": 12,
+    "orange": 32,
+    "blueberry":1
+}  
 
-// let prices = {    
-//     "banana": 4, 
-//     "apple": 2, 
-//     "pear": 1,
-//     "orange": 1.5,
-//     "blueberry":10
-// } 
+let prices = {    
+    "banana": 4, 
+    "apple": 2, 
+    "pear": 1,
+    "orange": 1.5,
+    "blueberry":10
+} 
 
-// let shoppingList = ['banana', 'orange', 'apple']
+let shoppingList = ['banana', 'orange', 'apple']
 
-// function myBill() {
-//     if (shoppingList in stock) {
-//         console.log(Object.keys(stock.shoppingList))
-//     }
-// }
+function myBill() {
+    if (shoppingList in stock) {
+        console.log(Object.keys(stock.shoppingList))
+    }
+}
 
 // Exercise 8 : Tips
 // John created a simple tip calculator to help calculate how much to tip when he and his family go to restaurants.
@@ -213,27 +213,26 @@
 // (NOTE: To calculate 20% of a value, simply multiply it with 20/100 = 0.2)
 
 // function checkBill(){
-//     let bill = prompt('How much is the bill?')
-//     let billNumber = parseInt(bill)
-//     tip20 = bill * ((20 / 100)+1)
-//     tip15 = bill * ((15 / 100)+1)
-//     tip10 = bill * ((10 / 100)+1)
-//     if (billNumber < 50) {
-//         alert(`You need to tip ${bill * (20 / 100)}$, Total amount is ${Math.round(tip20)}$`)
-//     }
-//     else if (billNumber >= 50 && billNumber <= 200) {
+    let bill = prompt('How much is the bill?')
+    let billNumber = parseInt(bill)
+    tip20 = bill * ((20 / 100)+1)
+    tip15 = bill * ((15 / 100)+1)
+    tip10 = bill * ((10 / 100)+1)
+    if (billNumber < 50) {
+        alert(`You need to tip ${bill * (20 / 100)}$, Total amount is ${Math.round(tip20)}$`)
+    }
+    else if (billNumber >= 50 && billNumber <= 200) {
 
-//         alert(`You need to tip ${bill * (15 / 100)}$, Total amount is ${Math.round(tip15)}$`)
-//     }
-//     else if (billNumber > 200) {
+        alert(`You need to tip ${bill * (15 / 100)}$, Total amount is ${Math.round(tip15)}$`)
+    }
+    else if (billNumber > 200) {
 
-//         alert(`You need to tip ${bill * (10 /100)}$, Total amount is ${Math.round(tip10)}$`)
-//     }
-// }
+        alert(`You need to tip ${bill * (10 /100)}$, Total amount is ${Math.round(tip10)}$`)
+    }
+}
 // checkBill()
 
 // Exercise 9 : Vacations Costs
-
 function hotelCost() {
     let nights = prompt('How many night would you like to stay?')
     let nightNumber = parseInt(nights)
@@ -245,7 +244,6 @@ function hotelCost() {
     console.log(totalHotel)
     return totalHotel
 }
-
 function planeRideCost() {
     let userAnswer = prompt('What is your destination?')
     let userVec = userAnswer.toLowerCase()
@@ -265,38 +263,33 @@ function planeRideCost() {
         console.log(planeCost)
         return planeCost
     }
-
 }
-
 function rentalCarCost() {
-    let rental = prompt('How many days would you like to rent the car?')
-    let rentalNumber = parseInt(rental)
+    let rental = parseInt(prompt('How many days would you like to rent the car?'))
+    // let rentalNumber = parseInt(rental)
     let totalCar = 0
-    while (isNaN(rentalNumber) === true) {
-        nights = prompt('How many days would you like to rent the car?')
+	while (isNaN(rental)) {
+        rental = parseInt(prompt('How many days would you like to rent the car?'))
+        console.log(typeof(rental))
     } 
-    if (rentalNumber > 10) {
-        totalCar = (rentalNumber * 40) * ((10 / 100) + 1)
+    if (rental > 10) {
+        totalCar = (rental * 40) * ((10 / 100) + 1)
         console.log(totalCar)
     }
-    else if (rentalNumber <= 10) {
-        totalCar = rentalNumber * 40
+    else if (rental <= 10) {
+        totalCar = rental * 40
         console.log(totalCar)
     }
     return totalCar
+    // it means that the function rentalCarCost() is equal to the value of totalCar
 }
-
 function totalVacationCost() {
-    hotelCost()
-    planeRideCost()
-    rentalCarCost()
-    let finalCar =  totalCar
-    let finalPlane = planeCost
-    let finalHotel = totalHotel
+	// to retrieve the value of totalCar: 
+	// you must create a new variable, and make it equal to the function
+    let finalCar = rentalCarCost()
+    let finalPlane =  planeRideCost()
+    let finalHotel = hotelCost()
     let sumTotal = finalCar + finalPlane + finalHotel
     alert(`The hotel price is:${finalHotel}$ the plane ticket cost is:${finalPlane}$, and the car cost is:${finalCar}$ , total trip is:${sumTotal}$`)
 }
-
 totalVacationCost()
-
-
