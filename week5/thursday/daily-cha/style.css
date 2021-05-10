@@ -1,0 +1,10 @@
+.box {
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: repeat(6 , 1fr);
+
+}
+.added {
+    background-color: white;
+}
