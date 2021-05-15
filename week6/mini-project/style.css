@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+#big {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#box {
+    background-color: whitesmoke;
+    width: 650px;
+    height: 800px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+#btn {
+    width: 300px;
+    height: 100px;
+}
+#text {
+    padding: 0px 25px;
+}
+#words {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#name {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+#form-box {
+    width: auto;
+}
+.btn-form {
+    font-size: 10px;
+}
