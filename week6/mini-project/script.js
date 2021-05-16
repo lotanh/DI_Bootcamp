@@ -44,13 +44,15 @@ const quotes = [
 var current = 0
 var previous = 0
 const btn = document.getElementById('btn')
+const btnP = document.getElementById('btn-previous')
 const words = document.querySelector('#words')
 const nameAuthor = document.querySelector('#name')
+const lastOne = quotes[-1]
 
 btn.addEventListener('click' , () => {
     if (current < quotes.length) {
         previous = current
-        current = Math.floor(Math.random() * 10)
+        current = Math.floor(Math.random() * 8)
         console.log(current)
         console.log(previous)
         if (current === previous) {
@@ -65,6 +67,12 @@ btn.addEventListener('click' , () => {
     }
 })
 
+btnP.addEventListener('click', () => {
+    words.innerHTML = `"${quotes[previous].quote}"`
+    nameAuthor.innerHTML = `${quotes[previous].author}`
+})
+
+
 const formBtn = document.querySelector('#btn-form')
 var quoteBox = document.getElementById('quote-box')
 var authorBox = document.getElementById('author-box')
@@ -75,6 +83,32 @@ formBtn.addEventListener('click', (event) => {
     newQuote = {id:i, author: authorBox.value, quote: quoteBox.value}
     quotes.push(newQuote)
     console.log(quotes)
+    authorBox.value = ""
+    quoteBox.value = ""
     i++
+    current++
+    event.preventDefault()
+})
+
+formBtn.addEventListener('click', (event) => {
+    newQuote = {id:i, author: authorBox.value, quote: quoteBox.value}
+    quotes.push(newQuote)
+    console.log(quotes)
+    authorBox.value = ""
+    quoteBox.value = ""
+    i++
+    current++
+    event.preventDefault()
+})
+
+const btnSearch = document.getElementById('search-btn')
+var searchBox = document.getElementById('search-input')
+
+btnSearch.addEventListener('click', (event) => {
+    var valueS = searchBox.value
+    console.log(valueS)
+    if (valueS in quotes) {
+       console.log(quotes.indexOf(valueS)) 
+    }
     event.preventDefault()
 })
