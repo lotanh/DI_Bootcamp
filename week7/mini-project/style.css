@@ -1,0 +1,85 @@
+body {
+    background-color: lightsteelblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: lightgreen;
+    /* position: absolute; */
+    /* top: 0; */
+    
+}
+#search {
+    width: 80%;
+    font-size: 30px;
+
+    padding: 10px -13px;
+}
+#search-box {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+#robot-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url(img/background1.png);
+    flex-wrap: wrap;
+    column-gap: 100px;
+    justify-content: center;
+    row-gap: 30px;
+    align-content: center;
+}
+#logo {
+    font-family: 'SEGA LOGO FONT', sans-serif;
+    padding: 25px;
+    font-size: 27px;
+    color: darkslategray;
+}
+
+.robot-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 355px;
+    width: 300px;
+    border-radius: 35px;
+    justify-content: space-around;
+}
+.img-div {
+    width: 209px;
+    height: 195px;
+    border-radius: 100px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+.img-robot {
+    width: 167px;
+    height: 159px;
+}
+
+

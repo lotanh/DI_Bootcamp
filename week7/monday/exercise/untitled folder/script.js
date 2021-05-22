@@ -75,3 +75,4 @@ const congStudent = passTest.map(item => {
 congStudent.forEach(stu => {
     console.log(stu)
 })
+Exercises
