@@ -107,6 +107,7 @@ const createElements = (arr) => {
     robotContainer.appendChild(div)
   })
 }
+createElements(robots)
 
 
 
