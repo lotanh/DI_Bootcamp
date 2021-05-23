@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #frm {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 10px;
+        }
+        </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Exercise 1 : HTML Form -->
+
+    <form id='frm' method="GET" action="index.html">
+        <p>Name</p>
+        <input type="text" name="name" value="" id="input-name"></input>
+        <p>Comment</p>
+        <textarea type="text" name="comment" value="" id="input-comment" style="height: 200px;"></textarea>
+        <input type="submit" name="" value="Submit">
+    </form>
+
+    <!--Exercise 2 : HTML Form #2 -->
+
+    <form id='frm' method="POST" action="index.html">
+        <p>Name</p>
+        <input type="text" name="name" value="" id="input-name"></input>
+        <p>Comment</p>
+        <textarea type="text" name="comment" value="" id="input-comment" style="height: 200px;"></textarea>
+        <input type="submit" name="" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Where will the sent data appear in ex 1? -->
+<!-- The data is appearing now in our url -->
+
+<!-- Where will the sent data appear in ex 2? -->
+<!-- Our data is in the Network Tab when we are doing post it appended to the body of the HTTP request. -->
