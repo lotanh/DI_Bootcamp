@@ -106,7 +106,8 @@ var searchBox = document.getElementById('search-input')
 
 btnSearch.addEventListener('click', (event) => {
     var valueS = searchBox.value
-    console.log(valueS)
+    var searchIndex = quotes.indexOf(valueS)
+    console.log(searchIndex)
     if (valueS in quotes) {
        console.log(quotes.indexOf(valueS)) 
     }
