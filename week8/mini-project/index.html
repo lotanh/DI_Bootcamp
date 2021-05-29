@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div id="boss">
         <div id="header">
-            <div id="logo">
-                <img src="img/logo.png" id="logo-img">
-            </div>
-        <form id='frm'>
-            <input type="text" placeholder="Search.." name="search" id="inp">
-            <button type="button" id='btn' onclick="checkWeather()">Search</button>
-        </form>
+            <form id='frm' >
+                <input type="text" placeholder=" Search city..." name="search" id="inp">
+                <button type="submit" id='btn'><i class="fa fa-search"></i></button>
+            </form>
         </div>
-
+        <div id=text>
+            <p>Weather List</p>
+        </div>
         <div id='container'>
 
         </div>
+        <div class='temp'>
+            <p>
+                <label class="toggleSwitch large">
+                    <input type="checkbox" id='switchValue'/>
+                    <span id="btnToggle">
+                        <span>C</span>
+                        <span>K</span>
+                    </span>
+                    <a></a>
+                </label>
+            </p>
     </div>
     <script src="script.js"></script>
 </body>
