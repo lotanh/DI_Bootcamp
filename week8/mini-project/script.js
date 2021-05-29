@@ -1,13 +1,18 @@
 const btn = document.getElementById('btn')
 let currentWeather =[]
+var toggleBtn = document.getElementById("switchValue")
+toggleBtn.checked = true
+let toggleDiv = document.querySelector('.temp')
+toggleDiv.style.display = 'NONE'
+// console.log(isChecked);
 
-// getting the info of the weather from the user input 
+let userType = document.getElementById('inp')
 
-const checkWeather = () => {
-    let userInput = document.getElementById('inp').value;
-
+btn.addEventListener('click', (event) => {
+    let userInput = userType.value;
+    userType.value = ''
     if (userInput == '') {
-        alert('Please write a city!')
+        alert('Please write a city!');
 
     } else {
         userInput = userInput.toLowerCase();
@@ -22,27 +27,30 @@ const checkWeather = () => {
         x.onload = function() {
             if(x.status != 200){
                 console.log(x.status);
+                if (x.status == 404) {
+                    alert('not found')
+                }
             }
             else{
-                userInput.value = ""
-                var weatherData = JSON.parse(x.response)
-                console.log(weatherData)
-                currentWeather.push(weatherData)
+                var weatherData = JSON.parse(x.response);
+                console.log(weatherData);
+                currentWeather.push(weatherData);
                 // console.log(currentWeather)
-                createCityCard(weatherData)
+                createCityCard(weatherData);
             }
         }  
-    } 
-}
+    }
+    // userInput.reset()
+    event.preventDefault() 
+})
 
 
 const createCityCard = (city) => {
-
     // creating element
-
     let container = document.getElementById('container')
     let div = document.createElement('div')
     div.classList.add('city-div')
+    div.classList.add('fade-in')
     let cityName = document.createElement('p')
     cityName.classList.add('city-p')
     let icon = document.createElement('img')
@@ -63,7 +71,9 @@ const createCityCard = (city) => {
     let tempC = Math.round(tempK - 273.15)
     temp.innerText = tempC + "°"
     tempStatus.innerText = city.weather[0].description
-    deleteCity.innerText = 'X'
+    deleteCity.innerText = 'x'
+
+    toggleDiv.style.display = 'block'
 
 
     // appending them
@@ -79,6 +89,16 @@ const createCityCard = (city) => {
 
     deleteCity.addEventListener('click', () => {
         div.style.display = 'NONE'
+    })
+
+    //  Changing the temp view
+    
+    toggleBtn.addEventListener('click' , () => {
+        if (toggleBtn.checked == false) {
+            temp.innerText = Math.round(tempK) + "K";
+        } else {
+            temp.innerText = tempC + "°";
+        }
     })
 }
 
