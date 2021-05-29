@@ -3,34 +3,57 @@
     padding: 0;
     box-sizing: border-box;
     /* border: 2px solid black; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+button {
+  cursor: pointer;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 #boss {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    gap: 50px;
 }
 #header {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: darkslategrey;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: darkslategrey;
+  justify-content: center;
 }
 /* #logo {
     width: 30%;
 } */
-#frm {
-    width: 70%;
-}
 #btn {
-    width: 100px;
-    font-size: 30px;
+  width: 22px;
+  font-size: 17px;
+  height: 20px;
+  /* border-radius: 5px; */
+  margin: 0px -28px;
+  background-color: white;
+  border: none;
+  color: #ccc;
+  /* cursor: pointer; */
 }
+input[type=text] {
+    /* float: right; */
+    padding: 6px;
+    border: none;
+    /* margin-top: 8px; */
+    /* margin-right: 16px; */
+  }
 #inp {
-    border-radius: 5px;
-    font-size: 30px;
-    width: 70%;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 450px;
+  height: 36px;
 }
 #container {
     display: flex;
@@ -38,7 +61,7 @@
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    height: 600px;
+    /* height: 600px; */
     align-content: center;
     gap: 80px;
 }
@@ -71,3 +94,165 @@
     right: -5px;
     top: -8px;
 }
+.temp {
+    position: relative;
+}
+
+.fade-in {
+	animation: fadeIn 1s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
+/* *******switch button for the temp******** */
+
+.toggleSwitch span span {
+    display: none;
+  }
+  
+  @media only screen {
+    .toggleSwitch {
+      display: inline-block;
+      height: 18px;
+      position: relative;
+      overflow: visible;
+      padding: 0;
+      margin-left: 50px;
+      cursor: pointer;
+      width: 40px;
+        user-select: none;
+    }
+    .toggleSwitch * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .toggleSwitch label,
+    .toggleSwitch > span {
+      line-height: 20px;
+      height: 20px;
+      vertical-align: middle;
+    }
+    .toggleSwitch input:focus ~ a,
+    .toggleSwitch input:focus + label {
+      outline: none;
+    }
+    .toggleSwitch label {
+      position: relative;
+      z-index: 3;
+      display: block;
+      width: 100%;
+    }
+    .toggleSwitch input {
+      position: absolute;
+      opacity: 0;
+      z-index: 5;
+    }
+    .toggleSwitch > span {
+      position: absolute;
+      left: -50px;
+      width: 100%;
+      margin: 0;
+      padding-right: 50px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .toggleSwitch > span span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      display: block;
+      width: 50%;
+      margin-left: 50px;
+      text-align: left;
+      font-size: 0.9em;
+      width: 100%;
+      left: 15%;
+      top: -1px;
+      color: black;
+      /* opacity: 0; */
+    }
+    .toggleSwitch a {
+      position: absolute;
+      right: 50%;
+      z-index: 4;
+      display: block;
+      height: 100%;
+      padding: 0;
+      left: 2px;
+      width: 18px;
+      background-color: lightskyblue;
+      border: 1px solid #CCC;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    .toggleSwitch > span span:first-of-type {
+      color: black;
+      opacity: 1;
+      left: 45%;
+    }
+    .toggleSwitch > span:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50px;
+      top: -2px;
+      background-color: #fafafa;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+    .toggleSwitch input:checked ~ a {
+      border-color: #fff;
+      left: 100%;
+      margin-left: -8px;
+    }
+    .toggleSwitch input:checked ~ span:before {
+      border-color: black;
+      box-shadow: inset 0 0 0 30px whitesmoke;
+    }
+    /* .toggleSwitch input:checked ~ span span:first-of-type {
+      opacity: 0;
+    } */
+    .toggleSwitch input:checked ~ span span:last-of-type {
+      opacity: 1;
+      color: black;
+    }
+    /* Switch Sizes */
+    .toggleSwitch.large {
+      width: 60px;
+      height: 27px;
+    }
+    .toggleSwitch.large a {
+      width: 27px;
+    }
+    .toggleSwitch.large > span {
+      height: 29px;
+      line-height: 28px;
+    }
+    .toggleSwitch.large input:checked ~ a {
+      left: 41px;
+    }
+    .toggleSwitch.large > span span {
+      font-size: 1.1em;
+    }
+    .toggleSwitch.large > span span:first-of-type {
+      left: 68%;
+    }
+  }
