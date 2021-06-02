@@ -31,18 +31,19 @@ compareToTen(8)
 
 // 2
 
-// const timer = new Promise(function (resolve, reject) {
-//     setTimeout(() => {
-//         resolve("Success");
-//     }, 4000);
-// });
+const timer = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        resolve("Success");
+    }, 4000);
+});
 
-// timer.then(res => {
-//     console.log(res)
-// })
-// .catch(rej => {
-//     console.log(rej);
-// })
+timer.then(res => {
+    console.log(res)
+})
+.catch(rej => {
+    console.log(rej);
+})
+
 var promise = Promise.resolve('Success');
 var err = Promise.reject('Ooops something went wrong ');
   
@@ -51,8 +52,6 @@ promise.then(function(val) {
 } , function(value) {
     console.log(value);
 });
-// Promise.resolve('Success').then(function(value) {
-//   console.log(value); // "Success"
-// }, function(value) {
-//   // not called
-// });
+
+// 3 
+
