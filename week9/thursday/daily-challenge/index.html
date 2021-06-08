@@ -8,11 +8,32 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="header">
-        
+    <div id='boss'>
+        <div id='header'>
+            <img src="img/1.png">
+        </div>
+        <div id='container'>
+            <div id='box'>
+                <div class='select-box'>
+                    <h4>To:</h4>
+                    <select class ='select-menu' name="to-choose" id="To" required>
+                    </select>
+                </div>
+                <div class='select-box'>
+                    <h4>From:</h4>
+                    <select class ='select-menu' name="from-choose" id="From" required>
+                    </select>
+                </div>
+                <div class='select-box'>
+                    <h4>Amount:</h4>
+                    <form id='frm'>
+                        <input type="number" placeholder=" 0.00" name="search" id="input-number">
+                        <button type="submit" id='btn'>Convert!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-
     <script src="script.js"></script>
 </body>
 </html>
