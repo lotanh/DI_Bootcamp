@@ -44,11 +44,16 @@ btn.addEventListener('click', (event) => {
     event.preventDefault() 
 })
 
+const checkList = currentWeather.filter(item => {
+    return item.includes(userType)
+})
 
 const createCityCard = (city) => {
     // creating element
     let container = document.getElementById('container')
     let div = document.createElement('div')
+    let divHeader = document.createElement('div')
+    divHeader.classList.add('divHeader')
     div.classList.add('city-div')
     div.classList.add('fade-in')
     let cityName = document.createElement('p')
@@ -58,6 +63,7 @@ const createCityCard = (city) => {
     let temp = document.createElement('p')
     temp.classList.add('temp')
     let tempStatus = document.createElement('p')
+    tempStatus.classList.add('temp')
     let deleteCity = document.createElement('button')
     deleteCity.classList.add('delete')
 
@@ -78,7 +84,8 @@ const createCityCard = (city) => {
 
     // appending them
 
-    div.appendChild(cityName)
+    divHeader.appendChild(cityName)
+    div.appendChild(divHeader)
     div.appendChild(icon)
     div.appendChild(temp)
     div.appendChild(tempStatus)
